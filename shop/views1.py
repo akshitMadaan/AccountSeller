@@ -7,8 +7,8 @@ from django.core.mail import EmailMessage
 from django.conf import settings
 from django.template.loader import render_to_string
 from PayTm import Checksum
-MERCHANT_KEY= 'fcZNMtm!Ms1k45hb'
-# MERCHANT_KEY= '5LO0BQOd3abbAn9v'
+MERCHANT_KEY= ''
+# MERCHANT_KEY= ''
 # Create your views here.
 
 def home(request):
@@ -129,7 +129,7 @@ def checkout(request):
 
         param_dict = {
 
-                # 'MID': 'waLUWl48954879844666',
+                # 'MID': '',
                 # 'ORDER_ID': str(order.order_id),
                 # 'TXN_AMOUNT': str(amount),
                 # 'CUST_ID': email,
@@ -138,7 +138,7 @@ def checkout(request):
                 # 'CHANNEL_ID': 'WEB',
                 # 'CALLBACK_URL':'http://127.0.0.1:8000/shop/orderstatus/',
 
-                'MID': 'iqgxNE34734651948434',
+                'MID': '',
                 'ORDER_ID': str(order.order_id),
                 'TXN_AMOUNT': str(amount),
                 'CUST_ID': email,
