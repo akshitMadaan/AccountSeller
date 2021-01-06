@@ -18,7 +18,7 @@ from django.views.decorators.csrf import csrf_protect, csrf_exempt
 from django.template.context_processors import csrf
 
 # from PayTm import Checksum
-# MERCHANT_KEY= 'fHJgrS3&0myFfK6g'
+# MERCHANT_KEY= ''
 # Create your views here.
 
 def home(request):
@@ -148,9 +148,9 @@ def checkout(request):
         thank = True
         id = order.order_id
         # return render(request, 'shop/checkout.html', {'thank':thank, 'id': id})
-        MERCHANT_KEY = "eCQxpxK3"
-        key="eCQxpxK3"
-        SALT = "h3gvnlupey"
+        MERCHANT_KEY = ""
+        key=""
+        SALT = ""
         PAYU_BASE_URL = "https://sandboxsecure.payu.in/_payment"
         surl = "shop/success.html"
         furl = "shop/failure.html"
@@ -211,7 +211,7 @@ def success(request):
     key=request.POST["key"]
     productinfo=request.POST["productinfo"]
     email=request.POST["email"]
-    salt="h3gvnlupey"
+    salt=""
     try:
         additionalCharges=request.POST["additionalCharges"]
         retHashSeq=additionalCharges+'|'+salt+'|'+status+'|||||||||||'+email+'|'+firstname+'|'+productinfo+'|'+amount+'|'+txnid+'|'+key
@@ -240,7 +240,7 @@ def failure(request):
     key=request.POST["key"]
     productinfo=request.POST["productinfo"]
     email=request.POST["email"]
-    salt="h3gvnlupey"
+    salt=""
     try:
         additionalCharges=request.POST["additionalCharges"]
         retHashSeq=additionalCharges+'|'+salt+'|'+status+'|||||||||||'+email+'|'+firstname+'|'+productinfo+'|'+amount+'|'+txnid+'|'+key
