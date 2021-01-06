@@ -129,13 +129,13 @@ MEDIA_URL = '/media/'
 
 
 # SMPTP configuration
-# EMAIL_USE_TLS = True 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_USE_TLS = True 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'streambay.net'
-EMAIL_PORT = 26
-EMAIL_HOST_USER = 'support@streambay.net' 
-EMAIL_HOST_PASSWORD = 'Y3PGrGJYWzed'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'streambay.net'
+# EMAIL_PORT = 26
+EMAIL_HOST_USER = '' 
+EMAIL_HOST_PASSWORD = ''
