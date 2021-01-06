@@ -8,8 +8,8 @@ from django.conf import settings
 from django.template.loader import render_to_string
 import razorpay
 
-client = razorpay.Client(auth=("rzp_test_Vhi7uERAcssGSC", "Jxcnk0LCwIHZ4D4ZwjfdPriU"))
-# client = razorpay.Client(auth=("rzp_live_wkPKQnPOP7FNhi", "GXHoH0vED6vR0L5Zua0MAy0g"))
+client = razorpay.Client(auth=("", ""))
+# client = razorpay.Client(auth=("", ""))
 
 # Create your views here.
 
